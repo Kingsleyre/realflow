@@ -12,7 +12,6 @@ export default function Register() {
   const [terms, setTerms] = useState(false);
   const [newsletter, setNewsletter] = useState(false);
   const [errors, setErrors] = useState({});
-  console.log(terms);
 
   const toggleTerms = (terms) => {
     return !terms;
@@ -97,7 +96,7 @@ export default function Register() {
                     type="password"
                     name="password"
                     id="password"
-                    placeholder="enter password"
+                    placeholder="Enter Password"
                     className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
                     required=""
                     onChange={(e) => setPassword(e.target.value)}
@@ -113,7 +112,7 @@ export default function Register() {
                     type="password"
                     name="confirm_password"
                     id="confirm_password"
-                    placeholder="confirm password"
+                    placeholder="Confirm Password"
                     className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
                     required=""
                     onChange={(e) => setConfirmPassword(e.target.value)}

@@ -26,7 +26,7 @@ app.use(
 );
 
 app.get('/', (req, res) => {
-  res.send('Welcome to Backend App Kingsley');
+  res.send('Welcome to Backend App Kingsley :)');
 });
 
 module.exports = app;
